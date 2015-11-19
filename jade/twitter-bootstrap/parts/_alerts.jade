@@ -1,0 +1,9 @@
+section
+    .container
+        .page-header
+            h1 アラート
+        for msg, type in twitter.msgs
+            div(class="alert alert-#{type}" role='alert')
+                strong=msg.strong
+                |#{msg.body}
+

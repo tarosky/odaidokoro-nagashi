@@ -1,0 +1,10 @@
+section
+    .container
+        .page-header
+            h1 ボタン
+        for size in ['btn-lg', '', 'btn-sm', 'btn-xs']
+            p
+                each val, key in twitter.labels
+                    button(class="btn #{size} btn-#{key}", type="button")=val
+                    |&nbsp;
+

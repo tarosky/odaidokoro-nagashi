@@ -1,0 +1,12 @@
+section
+    .container
+        .page-header
+            h1 パネル
+        .row
+            for label, type in twitter.labels
+                .col-sm-4
+                    div(class='panel panel-#{type}')
+                        .panel-heading
+                            h3.panel-title #{label}パネル
+                        .panel-body パネルの本文がここになります。
+                        .panel-footer フッターです

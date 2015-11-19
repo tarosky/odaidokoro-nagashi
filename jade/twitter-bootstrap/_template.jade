@@ -1,0 +1,22 @@
+doctype html
+html(lang='ja')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible',content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Kitchen-Sink for Bootstrap
+        for path in twitter.css
+            link(rel="stylesheet" href="#{path}" crossorigin="anonymous")
+    body(role='document')
+
+        include _header
+
+        block main
+
+        footer.copynote.text-center
+            p
+                |2015 Lincensed under MIT by&nbsp;
+                a(href='https://tarosky.co.jp') TAROSKY INC.
+
+        for js in twitter.js
+            script(src="#{js}")

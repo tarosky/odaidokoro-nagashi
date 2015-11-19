@@ -1,0 +1,19 @@
+section
+    .container
+        .page-header
+            h1 リスト
+        .row
+            for type in ['ol', 'ul']
+                .col-sm-6
+                    #{type}
+                        for item in twitter.lists
+                            li=item.body
+        hr
+        .row
+            for type in ['', 'dl-horizontal']
+                .col-sm-6
+                    dl(class='#{type}')
+                        for item in twitter.lists
+                            dt=item.title
+                            dd=item.body
+

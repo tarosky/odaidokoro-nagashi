@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='widths=device-width, initial-scale=1.0')
+        title Odaidokoro Nagashi
+
+    body
+        h1 Odaidokoro Nagashi
+        ol
+            each label, link in links
+                li
+                    a(href='#{link}')=label

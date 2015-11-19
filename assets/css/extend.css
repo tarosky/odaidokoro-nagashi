@@ -1,0 +1,24 @@
+body{
+    padding: 80px 0 !important;
+}
+body > section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+body > section:nth-child(odd){
+    border-top: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.copynote{
+    position: fixed;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 12px;
+}

@@ -1,0 +1,15 @@
+-
+    var textColors = JSON.parse(JSON.stringify(twitter.labels));;
+    delete textColors['default'];
+    textColors.muted = 'ミュート';
+
+section
+    .container
+        .page-header
+            h1 ヘルパークラス
+        for color in textColors
+            p(class='text-#{color}') これはtext-#{color}をつけた段落です。色が変わります。
+        for label, type in twitter.labels
+            unless (type == 'default' || type == 'link')
+                p(class='bg-#{type}') これはbg-#{type}をつけた段落です。背景色が変わります。
+
