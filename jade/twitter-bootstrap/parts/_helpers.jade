@@ -7,8 +7,8 @@ section
     .container
         .page-header
             h1 ヘルパークラス
-        for color in textColors
-            p(class='text-#{color}') これはtext-#{color}をつけた段落です。色が変わります。
+        for label, type in textColors
+            p(class='text-#{type}') これはtext-#{type}をつけた段落です。色が変わります。
         for label, type in twitter.labels
             unless (type == 'default' || type == 'link')
                 p(class='bg-#{type}') これはbg-#{type}をつけた段落です。背景色が変わります。
